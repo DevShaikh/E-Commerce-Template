@@ -1,5 +1,6 @@
 // Site Data
 import Products from '../src/data/Products.json'
+import WebInfo from '../src/data/WebInfo.json'
 
 // SECTIONS COMPONENTS
 import Header from './components/sections/Header'
@@ -7,7 +8,7 @@ import HeroSearch from './components/sections/HeroSearch'
 import FeaturedProducts from './components/sections/FeaturedProducts'
 import CategoriesCarousel from './components/sections/CategoriesCarousel'
 import Banner from './components/sections/Banner'
-import LatestProducts from './components/sections/LatestProducts'
+import ProductsCarousel from './components/sections/ProductsCarousel'
 import Blogs from './components/sections/Blogs'
 
 // COMPONENTS
@@ -21,10 +22,10 @@ const App = () => {
       <MobileNav />
 
       {/* SECTION - Header */}
-      <Header />
+      <Header webInfo={WebInfo} />
 
       {/* SECTION - Hero Search */}
-      <HeroSearch />
+      <HeroSearch webInfo={WebInfo} />
 
       {/* SECTION - Categories Carousel */}
       <CategoriesCarousel />
@@ -36,13 +37,13 @@ const App = () => {
       <Banner />
 
       {/* SECTION - Latest Products */}
-      <LatestProducts />
+      <ProductsCarousel products={Products} />
 
       {/* SECTION - Blogs */}
       <Blogs />
 
       {/* SECTION - Footer */}
-      <Footer />
+      <Footer webInfo={WebInfo} />
     </div>
   )
 }

@@ -1,4 +1,4 @@
-const Footer = () => {
+const Footer = ({ webInfo }) => {
   return (
     <footer className='footer spad'>
       <div className='container'>
@@ -7,13 +7,13 @@ const Footer = () => {
             <div className='footer__about'>
               <div className='footer__about__logo'>
                 <a href='#' className='logo'>
-                  V-Shop
+                  {webInfo.title}
                 </a>
               </div>
               <ul>
-                <li>Address: Ludhiana</li>
-                <li>Phone: 1234567890</li>
-                <li>Email: therichposts@gmail.com</li>
+                <li>Address: {webInfo.address}</li>
+                <li>Phone: {webInfo.phone}</li>
+                <li>Email: {webInfo.email}</li>
               </ul>
             </div>
           </div>
@@ -95,14 +95,7 @@ const Footer = () => {
           <div className='col-lg-12'>
             <div className='footer__copyright'>
               <div className='footer__copyright__text'>
-                <p>
-                  Copyright &copy;2021 All rights reserved | This template is
-                  made with <i className='fa fa-heart' aria-hidden='true'></i>{' '}
-                  by{' '}
-                  <a href='#' target='_blank'>
-                    Jassa
-                  </a>
-                </p>
+                <p>Copyright &copy;2021 All rights reserved</p>
               </div>
               <div className='footer__copyright__payment'>
                 <img src='assets/img/payment-item.png' alt='' />

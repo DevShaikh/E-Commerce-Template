@@ -48,5 +48,56 @@
       "price": 30.0,
       "categories": ["fastfood", "vegetables"]
     }
+  ],
+  "latest": [
+    {
+      "image": "assets/img/latest-product/lp-1.jpg",
+      "title": "Crab Pool Security",
+      "price": 30.0
+    },
+    {
+      "image": "assets/img/latest-product/lp-2.jpg",
+      "title": "Crab Pool Security",
+      "price": 30.0
+    },
+    {
+      "image": "assets/img/latest-product/lp-3.jpg",
+      "title": "Crab Pool Security",
+      "price": 30.0
+    }
+  ],
+  "topRated": [
+    {
+      "image": "assets/img/latest-product/lp-3.jpg",
+      "title": "Crab Pool Security",
+      "price": 30.0
+    },
+    {
+      "image": "assets/img/latest-product/lp-2.jpg",
+      "title": "Crab Pool Security",
+      "price": 30.0
+    },
+    {
+      "image": "assets/img/latest-product/lp-1.jpg",
+      "title": "Crab Pool Security",
+      "price": 30.0
+    }
+  ],
+  "review": [
+    {
+      "image": "assets/img/latest-product/lp-1.jpg",
+      "title": "Crab Pool Security",
+      "price": 30.0
+    },
+    {
+      "image": "assets/img/latest-product/lp-3.jpg",
+      "title": "Crab Pool Security",
+      "price": 30.0
+    },
+    {
+      "image": "assets/img/latest-product/lp-2.jpg",
+      "title": "Crab Pool Security",
+      "price": 30.0
+    }
   ]
 }

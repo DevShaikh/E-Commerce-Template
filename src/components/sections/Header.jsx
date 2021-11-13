@@ -1,4 +1,4 @@
-const Header = () => {
+const Header = ({ webInfo }) => {
   return (
     <header className='header'>
       <div className='header__top'>
@@ -8,7 +8,7 @@ const Header = () => {
               <div className='header__top__left'>
                 <ul>
                   <li>
-                    <i className='fa fa-envelope'></i> therichposts@gmail.com
+                    <i className='fa fa-envelope'></i> {webInfo.email}
                   </li>
                   <li>Free Shipping for all Order of $99</li>
                 </ul>
@@ -58,7 +58,7 @@ const Header = () => {
           <div className='col-lg-3'>
             <div className='header__logo'>
               <a href='#' className='logo'>
-                V-Shop
+                {webInfo.title}
               </a>
             </div>
           </div>

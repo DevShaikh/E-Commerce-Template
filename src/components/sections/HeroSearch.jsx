@@ -2,7 +2,7 @@ import Categories from '../Categories'
 import ContactBox from '../ContactBox'
 import SearchBar from '../SearchBar'
 
-const HeroSearch = () => {
+const HeroSearch = ({ webInfo }) => {
   return (
     <section className='hero'>
       <div className='container'>
@@ -13,7 +13,7 @@ const HeroSearch = () => {
           <div className='col-lg-9'>
             <div className='hero__search'>
               <SearchBar />
-              <ContactBox />
+              <ContactBox webInfo={webInfo} />
             </div>
             <div
               className='hero__item set-bg'
